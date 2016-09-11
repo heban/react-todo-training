@@ -1,0 +1,39 @@
+.todo-avatar {
+    // GLOBAL STYLES
+    
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: $color-g2;
+    color: $color-w1;
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+
+    // TABLET AND DOWN
+    @media (max-width: $screen-md-max) {
+
+    }
+    
+    // PHONE ONLY
+    @media (max-width: $screen-xs-max) {
+
+    }
+
+    // TABLET AND UP
+    @media (min-width: $screen-sm-min) {
+
+    }
+
+    // TABLET ONLY
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+
+    }
+
+    // PC ONLY
+    @media (min-width: $screen-lg-min) {
+
+    }
+}

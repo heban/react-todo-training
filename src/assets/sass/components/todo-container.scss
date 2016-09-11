@@ -1,0 +1,34 @@
+.todo-container {
+    // IMPORTS
+    @import "sidebar";
+    @import "todo-list";
+
+    // GLOBAL STYLES
+    margin: 0 auto;
+    overflow: hidden;
+
+    // TABLET AND DOWN
+    @media (max-width: $screen-md-max) {
+
+    }
+    
+    // PHONE ONLY
+    @media (max-width: $screen-xs-max) {
+
+    }
+
+    // TABLET AND UP
+    @media (min-width: $screen-sm-min) {
+        max-width: 72rem;
+    }
+
+    // TABLET ONLY
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+
+    }
+
+    // PC ONLY
+    @media (min-width: $screen-lg-min) {
+
+    }
+}

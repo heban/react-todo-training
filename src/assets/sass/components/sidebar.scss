@@ -1,0 +1,61 @@
+.todo-sidebar {
+    // GLOBAL STYLES
+
+    h2 {
+        font-weight: normal;
+        margin: 0;
+        padding: 1rem 0 0.5rem 0;
+        font-size: 2rem;
+        border-bottom: 0.2rem solid $color-g2;
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+            display: block;
+            padding: 0.8rem 1rem;
+            color: $color-b2;
+            text-decoration: none;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            transition: all 0.2s ease-in;
+            background: transparent;
+            will-change: background;
+        }
+
+        a:hover, a:active {
+            color: $color-w1;
+            background: $color-g2;
+        }
+    }
+
+    // TABLET AND DOWN
+    @media (max-width: $screen-md-max) {
+
+    }
+    
+    // PHONE ONLY
+    @media (max-width: $screen-xs-max) {
+
+    }
+
+    // TABLET AND UP
+    @media (min-width: $screen-sm-min) {
+        width: 24rem;
+        float: left;
+    }
+
+    // TABLET ONLY
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+
+    }
+
+    // PC ONLY
+    @media (min-width: $screen-lg-min) {
+
+    }
+}

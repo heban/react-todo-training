@@ -1,0 +1,107 @@
+.todo-item {
+    // GLOBAL STYLES
+    background: $color-w1;
+    border: 0.1rem solid $color-g2;
+    padding: 0.6rem 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+
+    &.todo-item--new {
+        .todo-item__name {
+            width: 100%;
+        }
+    }
+
+    .todo-item__name {
+        display: inline-block;
+        width: 80%;
+        border: none;
+        height: 2.8rem;
+        float: left;
+        color: $color-b2;
+
+        &.todo-item__name--completed {
+            color: $color-g2;
+        }
+    }
+
+    .todo-actions {
+        display: inline-block;
+        width: 20%;
+        height: 2.8rem;
+        padding-left: 0.5rem;
+        float: left;
+        position: relative;
+
+        input[type="checkbox"] {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    .todo-action__delete {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: $color-b2;
+        position: absolute;
+        top: 0.2rem;
+        right: 0.5rem;
+    }
+
+    .todo-action__complete {
+        display: inline-block;
+        position: absolute;
+        top: 0.4rem;
+        right: 3.5rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background: $color-w1;
+        border: 0.2rem solid $color-b2;
+        cursor: pointer;
+    }
+
+    input[type="checkbox"]:checked + .todo-action__complete {
+        border-color: $color-b1;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            width: 1.1rem;
+            height: 1.1rem;
+            background: $color-b1;
+            transform: translate3d(50%, -50%, 0);
+            border-radius: 50%;
+        }
+    }
+
+    // TABLET AND DOWN
+    @media (max-width: $screen-md-max) {
+
+    }
+    
+    // PHONE ONLY
+    @media (max-width: $screen-xs-max) {
+
+    }
+
+    // TABLET AND UP
+    @media (min-width: $screen-sm-min) {
+
+    }
+
+    // TABLET ONLY
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+
+    }
+
+    // PC ONLY
+    @media (min-width: $screen-lg-min) {
+
+    }
+}

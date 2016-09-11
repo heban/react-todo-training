@@ -1,0 +1,29 @@
+// TEMPLATE
+.container-name {
+	// GLOBAL STYLES
+	
+	// TABLET AND DOWN
+	@media (max-width: $screen-md-max) {
+
+	}
+	
+	// PHONE ONLY
+	@media (max-width: $screen-xs-max) {
+
+	}
+
+	// TABLET AND UP
+	@media (min-width: $screen-sm-min) {
+
+	}
+
+	// TABLET ONLY
+	@media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+
+	}
+
+	// PC ONLY
+	@media (min-width: $screen-lg-min) {
+
+	}
+}

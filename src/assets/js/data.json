@@ -1,0 +1,52 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "login": "johnny",
+            "password": "five"
+        },
+        {
+            "id": 2,
+            "login": "john",
+            "password": "orange"
+        }
+    ],
+    "todos": [
+        {
+            "user_id": 1,
+            "todo_id": 1,
+            "name": "Write code",
+            "completed": true
+        },
+        {
+            "user_id": 1,
+            "todo_id": 2,
+            "name": "Write tests",
+            "completed": false
+        },
+        {
+            "user_id": 1,
+            "todo_id": 3,
+            "name": "Run unit testing",
+            "completed": true
+        },
+        {
+            "user_id": 1,
+            "todo_id": 4,
+            "name": "Run UAT",
+            "completed": false
+        },
+        {
+            "user_id": 1,
+            "todo_id": 5,
+            "name": "Deploy to production",
+            "completed": false
+        },
+        {
+            "user_id": 1,
+            "todo_id": 6,
+            "name": "Inspect analytics",
+            "completed": false
+        }
+    ]
+}
